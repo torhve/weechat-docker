@@ -11,8 +11,10 @@ Network is used directly on the host to simplify binding ports and using differe
 
 Building
 ========
-sudo docker build -t="torhve/weechat" .
+
+    sudo docker build -t="torhve/weechat" .
 
 Running
 =======
-sudo docker run --net=host -i -t -v=/home/xt/weechat:/home/xt/.weechat -v /etc/localtime:/etc/localtime:ro torhve/weechat
+
+    sudo docker run --net=host -i -t -v=/home/xt/weechat:/home/xt/.weechat -v /etc/localtime:/etc/localtime:ro torhve/weechat
